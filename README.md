@@ -1,25 +1,33 @@
-# 💪 AI Fitness & Diet Advisor
+<div align="center">
 
-A sleek Python GUI app built with **CustomTkinter** that helps users get personalized fitness and diet plans based on their BMI and goals — no API required!
+# 🔥 FitInferno
 
----
+**Turn up the heat on your fitness goals.**  
+An AI-powered fitness & diet advisor with glowing vibes and ultra-clean UI.
 
-### 🧠 Features:
-- BMI calculation from weight and height (cm)
-- Fitness goal selection: Lose Weight, Gain Muscle, Stay Fit
-- Smart diet & workout advice based on your input
-- Modern CustomTkinter GUI
-- Pulsing neon glow button effect ✨
+<img src="assets/1.png" alt="FitInferno UI" width="500"/>
+
+</div>
 
 ---
 
-### 📸 Screenshot
-*Coming soon — or add one from your Mac*
+## 🧠 What is FitInferno?
+
+**FitInferno** is your intelligent personal trainer.  
+Just enter your:
+- ✅ Weight (kg)
+- ✅ Height (cm)
+- ✅ Fitness goal (💪 Lose Weight, 🏋️ Gain Muscle, 🧘 Stay Fit)
+
+…and FitInferno will instantly generate:
+- 📊 BMI & health status
+- 🏋️ Custom workout plan
+- 🥗 Smart diet tips
 
 ---
 
-### 🚀 How to Run
+## 🚀 How to Run
 
-1. Install the requirement:
 ```bash
 pip install customtkinter
+python main.py
