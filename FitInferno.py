@@ -53,19 +53,19 @@ def calculate():
 # --- GUI ---
 app = ctk.CTk()
 app.title("🔥 FitInferno")
-app.geometry("520x350")
+app.geometry("520x400")
 app.resizable(False, False)
-app.configure(fg_color="#000000")  # AMOLED background
+app.configure(fg_color="#000000")  # AMOLED pitch black
 
-# Real Hot Red
+# Colors
 MAIN_RED = "#FF0000"
-HOVER_RED = "#FF3333"
+WHITE = "#FFFFFF"
 
 # Title
 ctk.CTkLabel(app, text="🔥 FitInferno", font=("Segoe UI", 26, "bold"), text_color=MAIN_RED).pack(pady=(25, 15))
 
-# Input Frame
-frame = ctk.CTkFrame(app, width=460, height=180, corner_radius=10, fg_color="#0a0a0a")
+# Input Frame - pure black
+frame = ctk.CTkFrame(app, width=460, height=180, corner_radius=10, fg_color="#000000")
 frame.pack(pady=(0, 10))
 frame.pack_propagate(False)
 frame.grid_columnconfigure((0, 1), weight=1)
@@ -85,10 +85,11 @@ entry_height.grid(row=1, column=1, padx=15, pady=10, sticky="w")
 # Goal
 ctk.CTkLabel(frame, text="Fitness Goal:", font=label_font, text_color=MAIN_RED).grid(row=2, column=0, padx=15, pady=10, sticky="e")
 combo_goal = ctk.CTkComboBox(frame, values=["Lose Weight", "Gain Muscle", "Stay Fit", "Other"],
-                             width=180, fg_color="#000000", text_color=MAIN_RED, border_color=MAIN_RED)
+                             width=180, fg_color="#000000", text_color=MAIN_RED, border_color=MAIN_RED,
+                             button_color="#000000", button_hover_color="#111111")
 combo_goal.grid(row=2, column=1, padx=15, pady=10, sticky="w")
 
-# Red Button (No Pulse)
+# Red Outline Button with White Text (No Fill)
 glow_btn = ctk.CTkButton(
     app,
     text="🎯 Generate Plan",
@@ -96,16 +97,17 @@ glow_btn = ctk.CTkButton(
     font=("Segoe UI", 17, "bold"),
     width=240,
     height=50,
-    fg_color=MAIN_RED,
-    hover_color=HOVER_RED,
-    text_color="white",
+    fg_color="transparent",       # No fill
+    border_width=2,
+    border_color=MAIN_RED,
+    text_color=WHITE,
+    hover_color="#1a1a1a",
     corner_radius=25,
 )
 glow_btn.pack(pady=(10, 15))
 
-# Output Label
+# Output in red
 result_label = ctk.CTkLabel(app, text="", font=("Segoe UI", 15), wraplength=480, justify="left", text_color=MAIN_RED)
 result_label.pack(pady=(5, 10))
 
-# No animation anymore!
 app.mainloop()
