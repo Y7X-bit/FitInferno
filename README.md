@@ -11,16 +11,13 @@ Your AI-powered fitness and diet advisor with full AMOLED energy and pitch-hot r
 
 ---
 
-<div align="center">
-
 ### ⚡ Features at a Glance
 
-| 💪 | Smart BMI calculator from weight + height |
-| --- | ---------------------------------------- |
-| 🎯 | AI-generated plan based on your fitness goal |
-| 🧠 | Suggestions for workouts and clean diets |
-| 🎨 | AMOLED black + pure red outline UI |
-| 💻 | Works offline — no API needed |
+- 💪 Smart BMI calculator from weight + height  
+- 🎯 AI-generated workout and diet plans  
+- 🧠 Suggestions based on your fitness goal  
+- 🎨 AMOLED UI with pitch-hot red accents  
+- 💻 Works completely offline (no API needed)
 
 </div>
 
